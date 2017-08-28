@@ -1,8 +1,9 @@
-<%# Write your code here! %>
-Welcome!
-If you tell me your name I can say hi!
-<form>
-  Name:
-  <input type="text" name="user_name"><br>
-  <input type="submit" value = "Submit" formaction="greet">
+<h1>Welcome!</h1>
+
+<form action="/greet" method="POST">
+  <label for="user_name">Name:</label>
+
+  <p><input type="text" name="user_name" id="user_name" /></p>
+
+  <input type="submit" value="Submit"/>
 </form>
